@@ -7,13 +7,12 @@ import { FaGithub } from "react-icons/fa";
 
 import { GrDocumentUser } from "react-icons/gr";
 import { GoProjectSymlink } from "react-icons/go";
-import { FaHireAHelper } from "react-icons/fa";
+
 
 
 import AnimatedContent from '../reactbits/AnimatedContent';
 import SplitText from '../reactbits/SplitText/SplitText';
-import StarBorder from '../reactbits/starborder/StarBorder';
-import LetterGlitch from '../reactbits/LetterGlitch/LetterGlitch';
+
 import Example from '../reactboots/Example';
 import { Link } from 'react-router-dom';
 import Skeleton from './Skeleton';
