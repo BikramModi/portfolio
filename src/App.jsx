@@ -5,16 +5,20 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 function App() {
-  const isSnap = navigator.userAgent === "ReactSnap";
+  const isSnap = navigator.userAgent.includes("ReactSnap");
 
   useEffect(() => {
     console.log("Loaded route: ", window.location.pathname);
-  }, []);
+
+    if (isSnap) {
+      document.body.classList.add("snap");
+    }
+  }, [isSnap]);
 
   return (
     <div className="App">
@@ -63,19 +67,14 @@ function App() {
         Welcome to my portfolio built with the MERN stack.
       </p>
 
-      {/* FIXED: use Link instead of <a> */}
-      <Link to="/projects" style={{ display: "none" }}>
-        Projects
-      </Link>
-      <Link to="/resume" style={{ display: "none" }}>
-        Resume
-      </Link>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      {/* Routes */}
+      {!isSnap && (
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      )}
     </div>
   );
 }
