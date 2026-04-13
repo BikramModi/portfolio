@@ -1,0 +1,76 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-spring/web": "^9.7.5",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^5.3.5",
+    "ogl": "^1.0.11",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.5.1",
+    "react-scripts": "5.0.1",
+    "react-snap": "^1.23.0",
+    "vercel": "^41.6.2",
+    "web-vitals": "^2.1.4"
+  },
+
+"scripts": {
+  "start": "react-app-rewired start",
+  "build": "react-app-rewired build ",
+  "postbuild": " ",
+  "test": "react-app-rewired test",
+  "eject": "react-scripts eject"
+},
+"reactSnap": {
+  "inlineCss": true,
+  "puppeteerArgs": ["--no-sandbox"],
+  "removeBlobs": true,
+  "crawl": false,
+  "routes": [
+    "/",
+    "/resume",
+    "/projects"
+  ]
+},
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@types/react-helmet": "^6.1.11",
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "overrides": {
+    "@react-spring/web": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  }
+}

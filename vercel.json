@@ -1,0 +1,32 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "bikramportfolio.ooguy.com"
+        }
+      ],
+      "destination": "https://www.bikramportfolio.ooguy.com/:path*",
+      "permanent": true
+    }
+  ],
+
+"rewrites": [
+    { "source": "/resume", "destination": "/resume/index.html" },
+    { "source": "/projects", "destination": "/projects/index.html" }
+  ],
+
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    }
+  ]
+}
