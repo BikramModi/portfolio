@@ -115,7 +115,7 @@ export default function Home() {
 
                                                 <div className="h-[30%] w-[80%] mx-auto">
                                                     <h1 className="w-full h-[33%] sm:text-4xl text-slate-600 font-bold">
-                                                        TOPHER ATTICUS
+                                                        MY PORTFOLIO
                                                     </h1>
                                                     <h2 className="w-full h-[33%] sm:text-3xl font-bold">
                                                         I am a Full Stack

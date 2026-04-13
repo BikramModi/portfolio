@@ -116,7 +116,7 @@ export default function Resume() {
                                 />
 
                                 <h1 className="sm:text-3xl absolute mt-[330px] ml-4 text-black sm:font-bold">
-                                    Topher Atticus
+                                    My Portfolio
                                 </h1>
                             </div>
 
