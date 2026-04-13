@@ -160,7 +160,7 @@ export default function Home() {
                                                         rootMargin="-50px"
                                                         onLetterAnimationComplete={handleAnimationComplete}
                                                     /></div>
-                                                    <div className="w-[100%] h-[11%]  font-bold sm:text-5xl "><span className=' text-slate-600 '>I'M</span> TOPHER <span className=' text-slate-600 '>ATTICUS</span> ,   </div>
+                                                    <div className="w-[100%] h-[11%]  font-bold sm:text-5xl "><span className=' text-slate-600 '>I'M</span> MY <span className=' text-slate-600 '>PORTFOLIO</span> ,   </div>
                                                     <div className="w-[100%] h-[11%]  font-bold sm:text-5xl"><span className=' text-slate-600 '>A MERN STACK</span> DEVELOPER</div>
                                                     <div className="w-[100%] h-[11%]  font-bold sm:text-5xl">WITH USER CENTRIC <span className=' text-slate-600 '>DEVELOPER</span> </div>
                                                     <div className="w-[100%] h-[11%]  font-bold sm:text-5xl"> <span className=' text-slate-600 '>WITH PIXEL-PERFECT</span> PRECISION</div>
